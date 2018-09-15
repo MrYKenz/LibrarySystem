@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.RegistrationPageController">
+  <children>
+    <Label layoutX="60.0" layoutY="60.0" prefHeight="40.0" prefWidth="197.0" text="Username">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="60.0" layoutY="100.0" prefHeight="40.0" prefWidth="197.0" text="Forename" />
+    <Label font="$x1" layoutX="60.0" layoutY="140.0" prefHeight="40.0" prefWidth="197.0" text="Surname" />
+    <Label font="$x1" layoutX="60.0" layoutY="180.0" prefHeight="40.0" prefWidth="197.0" text="Address" />
+    <Label font="$x1" layoutX="60.0" layoutY="220.0" prefHeight="40.0" prefWidth="197.0" text="Postcode" />
+    <Label font="$x1" layoutX="60.0" layoutY="260.0" prefHeight="40.0" prefWidth="197.0" text="Password" />
+    <Label font="$x1" layoutX="60.0" layoutY="300.0" prefHeight="40.0" prefWidth="197.0" text="Confirm Password" />
+    <TextField fx:id="usernameTf" layoutX="300.0" layoutY="60.0" prefHeight="40.0" prefWidth="200.0" />
+    <TextField fx:id="forenameTf" layoutX="300.0" layoutY="100.0" prefHeight="40.0" prefWidth="200.0" />
+    <TextField fx:id="surnameTf" layoutX="300.0" layoutY="140.0" prefHeight="40.0" prefWidth="200.0" />
+    <TextField fx:id="addressTf" layoutX="300.0" layoutY="180.0" prefHeight="40.0" prefWidth="200.0" />
+    <TextField fx:id="postcodeTf" layoutX="300.0" layoutY="220.0" prefHeight="40.0" prefWidth="200.0" />
+    <PasswordField fx:id="passwordPf" layoutX="300.0" layoutY="260.0" prefHeight="40.0" prefWidth="200.0" />
+    <PasswordField fx:id="password2Pf" layoutX="300.0" layoutY="300.0" prefHeight="40.0" prefWidth="200.0" />
+    <Button font="$x1" layoutX="230.0" layoutY="367.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="40.0" prefWidth="140.0" text="Register" />
+    <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="158.0" layoutY="425.0" onMouseClicked="#openLoginPage" prefHeight="40.0" prefWidth="284.0" text="Already Registered? Login Here!" />
+  </children>
+</AnchorPane>

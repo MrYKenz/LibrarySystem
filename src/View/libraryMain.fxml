@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="930.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.LibraryMainController">
+  <children>
+    <Label fx:id="messageLabel" alignment="CENTER" layoutX="21.0" layoutY="23.0" prefWidth="895.0" text="Label">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <Button layoutX="418.0" layoutY="81.0" mnemonicParsing="false" onAction="#addBalanceAction" prefHeight="34.0" prefWidth="95.0" text="Add Balance" />
+    <Label id="messageLabel" alignment="CENTER" layoutX="14.0" layoutY="115.0" prefWidth="405.0" text="Items in the Library">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label id="messageLabel" alignment="CENTER" font="$x1" layoutX="511.0" layoutY="115.0" prefWidth="405.0" text="Items you have" />
+    <TableView fx:id="libraryTv" layoutX="14.0" layoutY="147.0" prefHeight="170.0" prefWidth="405.0" />
+    <TableView fx:id="userTv" layoutX="511.0" layoutY="147.0" prefHeight="170.0" prefWidth="405.0" />
+    <Button id="toLibrarybtn" fx:id="toLibraryBtn" layoutX="437.0" layoutY="181.0" minHeight="29.0" mnemonicParsing="false" onAction="#toLibrary" prefHeight="29.0" prefWidth="56.0" text="&lt;-" wrapText="true">
+      <font>
+        <Font size="15.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Button fx:id="toUserBtn" font="$x2" layoutX="437.0" layoutY="277.0" minHeight="29.0" mnemonicParsing="false" onAction="#toUserTv" prefHeight="29.0" prefWidth="56.0" text="-&gt;" wrapText="true" />
+    <Button layoutX="96.0" layoutY="342.0" mnemonicParsing="false" onAction="#addItemAction" prefHeight="34.0" prefWidth="95.0" text="Add Item" />
+    <Button fx:id="deleteItemBtn" layoutX="256.0" layoutY="342.0" mnemonicParsing="false" onAction="#deleteItemAction" prefHeight="34.0" prefWidth="95.0" text="Delete Item" />
+    <Button layoutX="846.0" layoutY="342.0" mnemonicParsing="false" onAction="#logOffAction" prefHeight="34.0" prefWidth="70.0" text="Log Off" />
+  </children>
+</AnchorPane>

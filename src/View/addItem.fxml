@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.AddItemController">
+  <children>
+    <Label alignment="CENTER" layoutX="224.0" layoutY="42.0" prefHeight="39.0" prefWidth="151.0" text="New Item">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label alignment="CENTER" font="$x1" layoutX="139.0" layoutY="100.0" prefHeight="40.0" prefWidth="150.0" text="Code" />
+    <Label alignment="CENTER" font="$x1" layoutX="139.0" layoutY="140.0" prefHeight="40.0" prefWidth="150.0" text="Name" />
+    <Label alignment="CENTER" font="$x1" layoutX="138.0" layoutY="180.0" prefHeight="40.0" prefWidth="150.0" text="Type" />
+    <Label alignment="CENTER" font="$x1" layoutX="138.0" layoutY="220.0" prefHeight="40.0" prefWidth="150.0" text="Cost" />
+    <TextField fx:id="codeTf" layoutX="300.0" layoutY="100.0" prefHeight="40.0" prefWidth="173.0" />
+    <TextField fx:id="nameTf" layoutX="300.0" layoutY="140.0" prefHeight="40.0" prefWidth="173.0" />
+    <ComboBox fx:id="typeBox" layoutX="300.0" layoutY="180.0" prefHeight="40.0" prefWidth="173.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Book" />
+          <String fx:value="Journal" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TextField fx:id="costTf" layoutX="299.0" layoutY="220.0" prefHeight="40.0" prefWidth="173.0" />
+    <Button layoutX="177.0" layoutY="296.0" mnemonicParsing="false" onAction="#confirmAction" prefHeight="39.0" prefWidth="94.0" text="Confirm" />
+    <Button layoutX="347.0" layoutY="296.0" mnemonicParsing="false" onAction="#backAction" prefHeight="39.0" prefWidth="94.0" text="Back" />
+  </children>
+</AnchorPane>
