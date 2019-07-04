@@ -1,6 +1,6 @@
-# LibrarySystem
-A library system with Front-End GUI in Java.
+# LibrarySystem :book:
+A library system created in Java.
 ---
-As part of a university assignment.
+:school: As part of a university assignment.
 
-Created for educational purposes.
+:books: Created for educational purposes.
